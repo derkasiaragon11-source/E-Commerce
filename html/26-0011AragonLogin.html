@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Login</title>
+
+        <link rel="stylesheet" href="../css/26-0011AragonLogIn.css">
+        <link rel="stylesheet" href="../css/26-0011AragonNavigation.css">
+        <script defer src="../js/26-0011AragonNavigation.js"></script>
+    </head>
+
+    <body>
+        <header class = "navbar">
+            <a href="../html/26-0011AragonHome.html" class="logo"></a>
+
+            <button class="nav-toggle" type="button" aria-label="Open navigation" aria-expanded="false" aria-controls="site-navigation">
+                <span></span><span></span><span></span>
+            </button>
+            <nav id="site-navigation">
+               <a href="../html/26-0011AragonFlower.html" class="act" id="act">Flowers</a>
+               <a href="../html/26-0011AragonAbout.html">About Us</a>
+               <a href="../html/26-0011AragonContact.html">Contact</a>
+               <a href="../html/26-0011AragonSignUp.html">Sign Up</a>
+            </nav>
+        </header>
+    
+        <div>
+           <form class="container" id="loginForm">
+               <h2>Login</h2>
+               
+               <div class="form">
+                  <label for="Username"></label>
+                  <input type = "text" id = "username"
+                  name = "user_name" placeholder = " Enter Username"
+                  required>
+               </div>
+
+               <div class="box">
+                  <label for="Password"></label>
+                  <input minlength = "3" maxlength = "20"
+                  type = "password" id = "password"
+                  name = "pass_word" placeholder = " Enter Password"
+                  required>
+
+                  <span id = "toggle">Show</span>
+                </div>
+
+                <div class="account">
+                    <p>don't have an account yet?</p> 
+                    <a class="sign"  href="../html/26-0011AragonSignUp.html">
+                    Sign In</a>
+                </div>
+
+                <div>
+                   <button class="logIn-btn" type="submit">LogIn</button>
+                </div>
+           </form>
+        </div>
+
+        <footer>
+           <div class="footer-bottom">
+              <p>&copy; 2026 Derk's Collection. All rights reserved.</p>
+           </div>
+        </footer>
+
+        <script src="../js/26-0011AragonLogIn.js"></script>
+    </body>
+</html>

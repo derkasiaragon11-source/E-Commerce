@@ -1,0 +1,242 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../images/b.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: black;
+}
+
+.logo {
+    display: block;
+    width: 100px;
+    height: 100px;
+    background-image: url(../images/dc-removebg-preview.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+header {
+    flex: 1;
+    width: 100%;
+    min-height: 60px;
+    display: flex;
+    background-color: black;
+    color: gold;
+    justify-content: space-between;
+    align-items: center;
+    padding: 6px 15px;   
+    border-bottom: 1px solid gold;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+}
+
+nav {
+    display: flex;
+    gap: 30px;
+    
+}
+
+.navbar {
+    font-size: 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    margin-right: 20px;
+    border-bottom: 3px solid goldenrod;
+}
+
+.navbar nav {
+    display: flex;
+    gap: 30px;
+}
+
+.navbar nav a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+}
+
+nav a:hover,
+nav a:active {
+   color: goldenrod;
+   transition: color 0.3s ease;
+}
+
+.act {
+    color: goldenrod;
+    border-bottom: 2px solid goldenrod;
+}
+
+.navbar nav {
+    gap: 20px;
+}
+
+.navbar nav a {
+    font-size: 20px;
+}
+
+h2 {
+    color: goldenrod;
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 30px;
+}
+
+.container {
+    width: 700px;
+    max-width: 90%;
+    padding: 40px;
+    background-color: #1a1a1a;
+    border-radius: 15px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-color: 2px solid goldenrod;
+    color: white;
+    box-sizing: border-box;
+    margin-top: 100px;
+}
+
+.container .form,
+.container .box {
+    width: 100%;
+}
+
+.container input {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+}
+.form {
+    position: relative;
+    width: 200px;
+}
+
+#act{
+    color: goldenrod;
+    border-bottom: 2px solid goldenrod;
+}
+
+#username {
+    width: 500px;
+    padding: 12px 0;
+    background: transparent;
+    border: none;
+    border-bottom: 2px solid goldenrod;
+    outline: none;
+    color: aliceblue;
+    font-size: 20px;
+    box-sizing: border-box;
+    margin-bottom: 18px;
+}
+
+.box {
+    padding-top: 5px;
+    position: relative;
+    width: 200px;
+}
+
+.box input {
+    padding-right: 70px;
+}
+
+#password {
+    width: 500px;
+    padding: 12px 0;
+    background: transparent;
+    border: none;
+    border-bottom: 2px solid goldenrod;
+    outline: none;
+    color: aliceblue;
+    font-size: 20px;
+    box-sizing: border-box;
+}
+
+#toggle {
+    position: absolute;
+    right: -10px;
+    top: 50%;
+    bottom: 12px;
+    transform: translateY(-50%);
+    cursor: pointer;
+    font-size: 20px;
+    color: lightblue;
+    user-select: none;
+}
+
+button {
+    display: block;
+    margin: 25px auto 0;
+    padding: 8px 25px;
+    cursor: pointer;
+}
+
+.logIn-btn {
+    background-color: #FFD800;
+    border: none;
+    border-radius: 25px;
+    padding: 12px 30px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+p {
+    color: white;
+}
+
+.sign {
+    text-decoration: none;
+    color: #eedc82;
+}
+
+.account {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.account p {
+    margin: 0;
+}
+
+.contact {
+    padding: 40px 6%;
+    color: goldenrod;
+}
+
+footer {
+    width: 100%;
+    background-color: black;
+    color: goldenrod;
+    text-align: center;
+    padding: 12px 0;
+    border-top: 1px solid gold;
+    box-sizing: border-box;
+    margin-top: 20px;
+}
+
+footer p {
+    color: goldenrod;
+}
+
+/*PARA SA CP USER*/
+@media (max-width: 700px) {
+  .form-group {
+    grid-template-columns: 1fr;
+  }
+}

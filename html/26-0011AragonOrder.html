@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+         <meta charset="UTF-8">    
+         <meta name="viewport" content="width=device-width, initial-scale=1.0">    
+         <title>Order</title>
+
+         <link rel="stylesheet" href="../css/26-0011AragonOrder.css">
+         <link rel="stylesheet" href="../css/26-0011AragonNavigation.css">
+         <script defer src="../js/26-0011AragonNavigation.js"></script>
+    </head>
+
+    
+
+    <body>
+        <header>
+         <a href="../html/26-0011AragonHome.html" class="logo"></a>
+
+        <button class="nav-toggle" type="button" aria-label="Open navigation" aria-expanded="false" aria-controls="site-navigation">
+            <span></span><span></span><span></span>
+        </button>
+        <nav id="site-navigation">
+            <a href="../html/26-0011AragonFlower.html" class="active">Flowers</a>
+            <a href="../html/26-0011AragonAbout.html">About Us</a>
+            <a href="../html/26-0011AragonContact.html">Contact</a>
+            <a href="#cart-section">Cart (<span id="cart-count">0</span>)</a>
+            <a href="../html/26-0011AragonLogin.html" id="loginLink">Login</a>
+        </nav>
+        </header>
+
+        <main>
+            <section class="cart-section" id="cart-section">
+                <h1>Your Cart</h1>
+                <div id="cart-items" aria-live="polite"></div>
+                <p id="cart-total">Total: ₱0.00</p>
+                <button type="button" id="place-order-btn">Place Order</button>
+                <p id="cart-message" aria-live="polite"></p>
+            </section>
+
+        </main>
+        
+         <footer>
+           <div class="footer-bottom">
+              <p>&copy; 2026 Derk's Collection. All rights reserved.</p>
+           </div>
+         </footer>
+
+         <script src="../js/26-0011AragonSession.js"></script>
+         <script src="../js/26-0011AragonOrder.js?v=2"></script>
+    </body>
+</html>

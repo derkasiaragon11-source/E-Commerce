@@ -1,0 +1,219 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+    color: white;
+}
+
+header {
+    min-height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 25px;
+    background-color: black;
+    border-bottom: 1px solid gold;
+}
+
+.logo {
+    display: block;
+    width: 100px;
+    height: 100px;
+    background-image: url(../images/dc-removebg-preview.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+nav a {
+    color: white;
+    font-family: Arial, sans-serif;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+nav a span {
+    color: inherit;
+    font-size: inherit;
+}
+
+nav a:hover,
+nav a:active {
+    color: goldenrod;
+}
+
+.active {
+    color: goldenrod;
+    border-bottom: 2px solid goldenrod;
+}
+
+.welcome {
+    min-height: 500px;
+    padding: 40px 3%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-image: url(../images/flow.jfif);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.welcome h1,
+.welcome h2,
+.welcome h3 {
+    max-width: 55%;
+    margin: 8px 0;
+    text-align: left;
+    font-family: Georgia, serif;
+    text-shadow: 2px 2px 4px black;
+}
+
+.welcome h1 {
+    color: white;
+    font-size: 42px;
+    line-height: 1.1;
+}
+
+.welcome h1 span {
+    color: goldenrod;
+    font-size: 50px;
+}
+
+.welcome h2 {
+    color: white;
+    font-size: 27px;
+    font-style: italic;
+}
+
+.welcome h3 {
+    color: white;
+    font-size: 20px;
+    font-style: italic;
+    font-weight: normal;
+}
+
+.featured {
+    padding: 40px 6%;
+    color: white;
+    background-image: url(../images/b.jpg);
+    border-top: 1px solid gold;
+}
+
+.featured h1 {
+    margin-bottom: 30px;
+    color: goldenrod;
+    font-size: 40px;
+    text-align: center;
+}
+
+.bouquet-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 24px;
+}
+
+.bouquet-card {
+    padding-bottom: 16px;
+    overflow: hidden;
+    background-color: #111;
+    border: 1px solid goldenrod;
+    border-radius: 12px;
+    text-align: center;
+}
+
+.bouquet-card img {
+    display: block;
+    width: 100%;
+    height: 260px;
+    padding: 12px;
+    background-color: black;
+    object-fit: contain;
+}
+
+.bouquet-card h2 {
+    margin: 16px 8px 8px;
+    color: goldenrod;
+    font-size: 20px;
+}
+
+.bouquet-card p {
+    margin: 8px;
+    color: white;
+    font-size: 18px;
+}
+
+.contact {
+    padding: 40px 6%;
+    color: goldenrod;
+}
+
+footer {
+    padding: 20px 0;
+    color: goldenrod;
+    background-color: black;
+    border-top: 1px solid gold;
+    text-align: center;
+}
+
+@media (max-width: 750px) {
+    .bouquet-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    nav {
+        gap: 20px;
+    }
+
+    @media (max-width: 760px) {
+        nav {
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+    }
+
+    .welcome h1,
+    .welcome h2,
+    .welcome h3 {
+        max-width: 75%;
+    }
+}
+
+@media (max-width: 500px) {
+    header {
+        flex-direction: column;
+    }
+
+    nav {
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 10px 0;
+    }
+
+    .bouquet-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .welcome h1,
+    .welcome h1 span {
+        font-size: 32px;
+    }
+
+    .welcome h2 {
+        font-size: 22px;
+    }
+
+    .welcome h3 {
+        font-size: 18px;
+    }
+}

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Derk's Collection</title>
+
+        <link rel="stylesheet" href="../css/26-0011AragonHome.css">
+        <link rel="stylesheet" href="../css/26-0011AragonProductCart.css">
+        <link rel="stylesheet" href="../css/26-0011AragonNavigation.css">
+        <script defer src="../js/26-0011AragonNavigation.js"></script>
+    </head>
+
+    <body>
+        <header>
+            <a href="../html/26-0011AragonHome.html" class="logo"></a>
+            <button class="nav-toggle" type="button" aria-label="Open navigation" aria-expanded="false" aria-controls="site-navigation">
+                <span></span><span></span><span></span>
+            </button>
+            <nav id="site-navigation">
+               <a href="../html/26-0011AragonFlower.html" class="active">Flowers</a>
+               <a href="../html/26-0011AragonAbout.html">About Us</a>
+               <a href="../html/26-0011AragonContact.html">Contact</a>
+               <a href="../html/26-0011AragonOrder.html#cart-section">Cart (<span id="cart-count">0</span>)</a>
+               <a href="../html/26-0011AragonLogin.html" id="loginLink">Login</a>
+            </nav>
+        </header>
+
+        <div class="welcome">
+           <h1>Welcome to <br> 
+           <span>Derk's Collection</span></h1>
+
+           <h2>Flowers That Last, Memories That Stay</h2>
+           <h3>Handcrafted satin bouquets for every occasion, made with love.</h3>
+        </div>
+
+        <section class="featured">
+            <h1>Featured Bouquets</h1>
+
+            <div class="bouquet-grid">
+                <div class="bouquet-card" data-name="Midnight Sapphire" data-price="479.99">
+                   <img src="../images/midnight-sapphire.jfif" alt="Midnight Sapphire">
+                    <h2>Midnight Sapphire</h2>
+                    <p>Price: ₱479.99</p>
+                    <button type="button" class="add-to-cart">Add to Cart</button>
+                    <button type="button" class="customize-product">Customize</button>
+                </div>
+
+                <div class="bouquet-card" data-name="Pink Serenity" data-price="499.99">
+                    <img src="../images/pink-serenity.jfif" alt="Pink Serenity">
+                    <h2>Pink Serenity</h2>
+                    <p>Price: ₱499.99</p>
+                    <button type="button" class="add-to-cart">Add to Cart</button>
+                    <button type="button" class="customize-product">Customize</button>
+                </div>
+
+                <div class="bouquet-card" data-name="Sapphire Champagne" data-price="499.99">
+                    <img src="../images/sapphire-champagne.jfif" alt="Sapphire Champagne">
+                    <h2>Sapphire Champagne</h2>
+                    <p>Price: ₱499.99</p>
+                    <button type="button" class="add-to-cart">Add to Cart</button>
+                    <button type="button" class="customize-product">Customize</button>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+           <div class="footer-bottom">
+              <p>&copy; 2026 Derk's Collection. All rights reserved.</p>
+           </div>
+        </footer>
+
+        <script src="../js/26-0011AragonSession.js"></script>
+        <script src="../js/26-0011AragonProductCart.js"></script>
+    </body>
+</html>

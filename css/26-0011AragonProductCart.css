@@ -1,0 +1,110 @@
+.bouquet-card .add-to-cart,
+.bouquet-card .customize-product {
+    display: inline-block;
+    margin: 12px 5px 0;
+    padding: 10px 18px;
+    border: 1px solid goldenrod;
+    border-radius: 24px;
+    background: goldenrod;
+    color: #111;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.bouquet-card .customize-product {
+    background: transparent;
+    color: goldenrod;
+}
+
+.bouquet-card .add-to-cart:hover,
+.bouquet-card .customize-product:hover {
+    filter: brightness(1.15);
+}
+
+.product-customizer {
+    width: min(520px, calc(100% - 32px));
+    max-height: 90vh;
+    margin: auto;
+    padding: 0;
+    overflow: auto;
+    color: whitesmoke;
+    background: #111;
+    border: 2px solid goldenrod;
+    border-radius: 14px;
+}
+
+.product-customizer::backdrop {
+    background: rgb(0 0 0 / 75%);
+}
+
+.product-customizer__form {
+    display: grid;
+    gap: 12px;
+    padding: 24px;
+}
+
+.product-customizer__form h2,
+.product-customizer__price {
+    color: goldenrod;
+}
+
+.product-customizer__name {
+    margin: 0;
+    color: whitesmoke;
+}
+
+.product-customizer__form > input,
+.product-customizer__form > select {
+    min-height: 40px;
+    padding: 8px;
+}
+
+.product-customizer__form fieldset {
+    display: grid;
+    gap: 10px;
+    padding: 12px;
+    border: 1px solid goldenrod;
+}
+
+.product-customizer__addon {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.product-customizer__actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    margin-top: 8px;
+}
+
+.product-customizer__actions button {
+    margin: 0;
+    padding: 10px 16px;
+    cursor: pointer;
+}
+
+.product-customizer__actions button[type="submit"] {
+    color: #111;
+    background: goldenrod;
+    border: 1px solid goldenrod;
+    border-radius: 20px;
+    font-weight: bold;
+}
+
+.product-customizer__actions button[type="button"] {
+    color: goldenrod;
+    background: transparent;
+    border: 1px solid goldenrod;
+    border-radius: 20px;
+}
+
+@media (max-width: 500px) {
+    .bouquet-card .add-to-cart,
+    .bouquet-card .customize-product {
+        margin-left: 2px;
+        margin-right: 2px;
+        padding: 9px 12px;
+    }
+}

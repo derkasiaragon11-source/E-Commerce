@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Sign Up</title>
+
+        <link rel="stylesheet" href="../css/26-0011AragonSignUp.css">
+        <link rel="stylesheet" href="../css/26-0011AragonNavigation.css">
+        <script defer src="../js/26-0011AragonNavigation.js"></script>
+    </head>
+    
+    <header>
+        <a href="../html/26-0011AragonHome.html">
+            <div class="logo"></div>
+        </a>
+
+        <button class="nav-toggle" type="button" aria-label="Open navigation" aria-expanded="false" aria-controls="site-navigation">
+            <span></span><span></span><span></span>
+        </button>
+        <nav id="site-navigation">
+           <ul>
+             <li><a href="../html/26-0011AragonFlower.html" class="active">Flowers</a></li>
+             <li><a href="../html/26-0011AragonAbout.html">About Us</a></li>
+             <li><a href="../html/26-0011AragonContact.html">Contact</a></li>
+             <li><a href="../html/26-0011AragonLogin.html">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <body>
+        <div>
+           <form class="container" id="signUpform">
+               <h2>Create Account</h2>
+
+               <div class="form-group">
+                  <label for="fullName">Full Name</label>
+                  
+                  <input
+                  type = "text"
+                  id = "fullName"
+                  name = "fullName"
+                  placeholder = "Enter your full name"
+                  required
+                  >
+               </div>
+
+               <div class="form-group">
+                  <label for="email">Email Address</label>
+                  
+                  <input
+                  type = "email"
+                  id = "email"
+                  name = "email"
+                  placeholder = "Enter your email"
+                  required
+                  >
+               </div>
+
+               <div class="form-group">               
+                  <label for="password">Password</label> 
+                  
+                  <div class="password-field">
+                     <input  minlength = "3" maxlength = "20"
+                     type = "password" id = "password"
+                     name = "password" placeholder = "Create a password"
+                     required>
+
+                     <span 
+                     class = "toggle" onclick="togglePassword('password', this)"
+                     >Show
+                     </span>
+                  </div>
+                </div>
+
+               <div class="form-group">
+                  <label for="confirmPassword">Confirm Password</label>  
+                  
+                  <div class="password-field">
+                     <input minlength = "3" maxlength = "20"
+                     type = "password" id = "confirmPassword"
+                     name = "confirm_password" placeholder = "Confirm your password"
+                     required>
+
+                     <span 
+                     class = "toggle" onclick="togglePassword('confirmPassword', this)"
+                     >Show
+                     </span>
+                  </div>
+               </div>
+
+               <div class="account">
+                  <p>Already have an account?</p>
+                  <a class="sign" href="../html/26-0011AragonLogin.html">Login</a>
+               </div>
+
+               <div>
+                  <button class="signup-btn" type="submit" >Sign Up</button>
+               </div>
+           </form>
+        </div>
+
+        <footer>
+           <div class="footer-bottom">
+              <p>&copy; 2026 Derk's Collection. All rights reserved.</p>
+           </div>
+        </footer>
+
+        <script src="../js/26-0011AragonSignUp.js"></script>
+    </body>
+
+    
+</html>
